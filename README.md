@@ -1,17 +1,17 @@
-# TumourHistologyDL
+# Characteraising the immunological landscape and spatial architecture of colon cancer tissue
 
-A deep learning and graph-based approach to characterise the immunological landscape and spatial architecture of colon cancer tissue
+This is a Python implementation of the paper:
 
-Mario Parreno-Centeno1, Guidantonio Malagoli Tagliazucchi1, Maria Secrier1,*
+<pre><code>
+@Article{graphbased,
+  author  = {Mario Parreno-Centeno and Guidantonio Malagoli Tagliazucchi and Maria Secrier},
+  title   = {A deep learning and graph-based approach to characterise the immunological landscape and spatial architecture of colon cancer tissue},
+  journal = {arXiv preprint},
+  year    = {2022},
+}
 
-1UCL Genetics Institute, Department of Genetics, Evolution and Environment, University College London, London, UK
+>To whom correspondence should be addressed (m.secrier@ucl.ac.uk)
 
-*To whom correspondence should be addressed (m.secrier@ucl.ac.uk)
-
-
-
-# Project Name
-> Outline a brief description of your project.
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
@@ -29,20 +29,18 @@ Mario Parreno-Centeno1, Guidantonio Malagoli Tagliazucchi1, Maria Secrier1,*
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+Tumour immunity is key for the prognosis and treatment of colon adenocarcinoma, but its characterisation remains cumbersome and expensive, requiring sequencing or other complex assays. Detecting tumour-infiltrating lymphocytes in haematoxylin and eosin (H&E) slides of cancer tissue would provide a cost-effective alternative to support clinicians in treatment decisions, but inter- and intra-observer variability can arise even amongst experienced pathologists when assessing a sample. Furthermore, the compounded effect of other cells in the tumour microenvironment is challenging to quantify but could yield useful additional biomarkers.
 
 
-## Technologies Used
+
+
+## Predicting the Immunescore level and presence of cells
 - Tech 1 - version 1.0
 - Tech 2 - version 2.0
 - Tech 3 - version 3.0
 
 
-## Features
+## Graph-based analysis
 List the ready features here:
 - Awesome feature 1
 - Awesome feature 2
