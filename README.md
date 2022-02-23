@@ -55,9 +55,9 @@ Tumour immunity is key for the prognosis and treatment of colon adenocarcinoma, 
 You can explore our database following the next steps:
 -  download a copy of our database [here](https://secrierlab.github.io/projects/). It is a zip file including all the necessary files.
 -  You will need an operational version of the Neo4j software running in your computer. We have used the open source version [Neo4j Community Edition](https://neo4j.com/download-center/#community).
--  Ensure the system service is not running on your machine:
-'sudo systemctl start neo4j.service'
--  Unzip the same graph.db.zip into the appropriate database folder.
+-  Ensure the system service is not running on your machine. In Linux:
+<pre><code> sudo systemctl stop neo4j.service </pre></code>
+-  Unzip the same graph.db.zip into the appropriate database folder. <neo4j-home>/data
 - Restart the Neo4j system service
 
 sudo systemctl start neo4j.service
@@ -75,7 +75,10 @@ You can  For tis work we used . Once you have downloaded a copy of database and 
 - Awesome feature 3
 > Live demo:
 
-[<img width="342" alt="Live demo" src="https://user-images.githubusercontent.com/9571043/155309678-cf766721-4ce9-4c48-aeb3-98ebf23f49db.png">](https://user-images.githubusercontent.com/9571043/155308305-37cf3912-f0ee-4020-a2c2-52c77b8c925c.mp4)
+[<img width="342" alt="Live demo" src="https://user-images.githubusercontent.com/9571043/155316306-bd8b2b9a-b224-4061-9d1f-de707ddd9543.png">](https://user-images.githubusercontent.com/9571043/155308305-37cf3912-f0ee-4020-a2c2-52c77b8c925c.mp4)
+
+
+
 
 
 ## Screenshots
