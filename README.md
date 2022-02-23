@@ -16,7 +16,11 @@ This is a Python implementation of the paper:
 
 
 
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+
+
+
+
+
 
 ## Table of Contents
 * [Introduction](#introduction)
@@ -48,10 +52,30 @@ Tumour immunity is key for the prognosis and treatment of colon adenocarcinoma, 
 
 
 ## Graph analysis
-List the ready features here:
+You can explore our database following the next steps:
+-  download a copy of our database [here](https://secrierlab.github.io/projects/). It is a zip file including all the necessary files.
+-  You will need an operational version of the Neo4j software running in your computer. We have used the open source version [Neo4j Community Edition](https://neo4j.com/download-center/#community).
+-  Ensure the system service is not running on your machine:
+'sudo systemctl start neo4j.service'
+-  Unzip the same graph.db.zip into the appropriate database folder.
+- Restart the Neo4j system service
+
+sudo systemctl start neo4j.service
+sudo systemctl enable neo4j.service
+sudo systemctl status neo4j.service
+sudo chmod -R 777 /var/lib/neo4j/data/databases/coad
+vim /etc/neo4j/neo4j.conf
+dbms.active_database = coad.db
+
+
+You can  For tis work we used . Once you have downloaded a copy of database and installed Neo4j in your computer, to explore our databse you can simply copy the image of the databse to the folder your Neo4J data is stored. 
+
 - Awesome feature 1
 - Awesome feature 2
 - Awesome feature 3
+> Live demo:
+
+[<img width="342" alt="Live demo" src="https://user-images.githubusercontent.com/9571043/155309678-cf766721-4ce9-4c48-aeb3-98ebf23f49db.png">](https://user-images.githubusercontent.com/9571043/155308305-37cf3912-f0ee-4020-a2c2-52c77b8c925c.mp4)
 
 
 ## Screenshots
@@ -89,14 +113,14 @@ To do:
 
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
 
+- MPC was supported by an Academy of Medical Science Springboard award (SBF004\1042).
+- GMT was supported by a Wellcome Seed Award in Science (215296/Z/19/Z).
+-  MS was supported by a UKRI Future Leaders Fellowship (MR/T042184/1) and work in MS’s lab was supported by a BBSRC equipment grant (BB/R01356X/1) and a Wellcome Institutional Strategic Support Fund (204841/Z/16/Z).
+ 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+>To whom correspondence should be addressed [@msecrier](https://www.ucl.ac.uk/biosciences/people/dr-maria-secrier/) - feel free to contact me!
 
 
 <!-- Optional -->
