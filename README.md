@@ -25,8 +25,8 @@ This is a Python implementation of the paper:
 ## Table of Contents
 * [Introduction](#introduction)
 * [Predicting the Immunescore level and presence of cells](#predicting)
-* [Features](#features)
-* [Graph analysis](#graph-analysis)
+* [Exploring our database](#explore)
+* [Graph analysis](#analysis)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Project Status](#project-status)
@@ -46,40 +46,34 @@ Tumour immunity is key for the prognosis and treatment of colon adenocarcinoma, 
 <a name="predicting"/>
 
 ## Predicting the Immunescore level and presence of cells
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
 
 
-## Graph analysis
+<a name="explore"/>
+## Exploring our database
+
 You can explore our database following the next steps:
 -  download a copy of our database [here](https://secrierlab.github.io/projects/). It is a zip file including all the necessary files.
--  You will need an operational version of the Neo4j software running in your computer. We have used the open source version [Neo4j Community Edition](https://neo4j.com/download-center/#community).
+-  You will need a version of the Neo4j software running in your computer. We have used the open source version [Neo4j Community Edition](https://neo4j.com/download-center/#community).
 -  Ensure the system service is not running on your machine. In Linux:
 <pre><code> sudo systemctl stop neo4j.service </pre></code>
--  Unzip the same graph.db.zip into the appropriate database folder. <neo4j-home>/data
+-  Unzip the same graph.db.zip into the appropriate database folder. By default in Linux <neo4j-home>/data/database
 - Restart the Neo4j system service
-
-sudo systemctl start neo4j.service
+<pre><code> sudo systemctl start neo4j.service 
 sudo systemctl enable neo4j.service
-sudo systemctl status neo4j.service
-sudo chmod -R 777 /var/lib/neo4j/data/databases/coad
-vim /etc/neo4j/neo4j.conf
-dbms.active_database = coad.db
-
-
-You can  For tis work we used . Once you have downloaded a copy of database and installed Neo4j in your computer, to explore our databse you can simply copy the image of the databse to the folder your Neo4J data is stored. 
-
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-> Live demo:
+</pre></code>
+- Ensure Neo4j us running:
+  <pre><code> sudo systemctl enable neo4j.service </pre></code>
+  
+> You can see a live demo in:
 
 [<img width="342" alt="Live demo" src="https://user-images.githubusercontent.com/9571043/155316306-bd8b2b9a-b224-4061-9d1f-de707ddd9543.png">](https://user-images.githubusercontent.com/9571043/155308305-37cf3912-f0ee-4020-a2c2-52c77b8c925c.mp4)
 
 
 
-
+<a name="analysis"/>
+## Graph analysis
+Once you have an operational copy of our database you can replicate the queries we conduct in the paper for our analysis following the Jupyter notebook in.
+  
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
