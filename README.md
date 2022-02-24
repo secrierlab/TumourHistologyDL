@@ -50,13 +50,13 @@ Tumour immunity is key for the prognosis and treatment of colon adenocarcinoma, 
 You can explore our database following the next steps:
 -  download a copy of our database [here](https://secrierlab.github.io/projects/). It is a zip file including all the necessary files.
 -  You will need a version of the Neo4j software running in your computer. We have used the open source version [Neo4j Community Edition](https://neo4j.com/download-center/#community).
--  Ensure the system service is not running on your machine. In Linux:
-<pre><code> sudo systemctl stop neo4j.service </pre></code>
--  Unzip the same graph.db.zip into the appropriate database folder. By default in Linux <neo4j-home>/data/database
+- Ensure the system service is not running on your machine. In Linux:
+  <pre><code> sudo systemctl stop neo4j.service </pre></code>
+- Unzip the same graph.db.zip into the appropriate database folder. By default in Linux <neo4j-home>/data/database
 - Restart the Neo4j system service
-<pre><code> sudo systemctl start neo4j.service 
-sudo systemctl enable neo4j.service
-</pre></code>
+  <pre><code> sudo systemctl start neo4j.service 
+  sudo systemctl enable neo4j.service
+  </pre></code>
 - Ensure Neo4j us running:
   <pre><code> sudo systemctl enable neo4j.service </pre></code>
   
