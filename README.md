@@ -71,6 +71,7 @@ sudo systemctl enable neo4j.service
 
 
 <a name="analysis"/>
+  
 ## Graph analysis
 Once you have an operational copy of our database you can replicate the queries we conduct in the paper for our analysis following the Jupyter notebook [in](https://github.com/secrierlab/TumourHistologyDL/blob/main/graph-analysis/queries_Neo4j.ipynb).
   
