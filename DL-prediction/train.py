@@ -22,10 +22,6 @@ IMAGE_SIZE    = (299, 299)
 NUM_CLASSES   = 3
 BATCH_SIZE    = 16 # try reducing batch size or freeze more layers if your GPU runs out of memory
 NUM_EPOCHS    = 50
-WEIGHTS_FINAL = 'model-inception_v3-final.h5'
-
-
-
 
 
 
@@ -93,15 +89,14 @@ plt.plot(epochs, accuracy, 'bo', label='Training accuracy')
 plt.plot(epochs, val_accuracy, 'b', label='Validation accuracy')
 plt.title('Training and validation accuracy')
 plt.legend()
-plt.savefig('training1.png')
+plt.savefig('losses.png')
 plt.figure()
 plt.plot(epochs, loss, 'bo', label='Training loss')
 plt.plot(epochs, val_loss, 'b', label='Validation loss')
 plt.title('Training and validation loss')
 plt.legend()
-plt.savefig('training2.png')
+plt.savefig('accuracy.png')
 
-# save trained weights
-net_final.save(WEIGHTS_FINAL)
+
 
 
