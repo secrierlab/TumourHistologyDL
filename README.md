@@ -43,8 +43,29 @@ Tumour immunity is key for the prognosis and treatment of colon adenocarcinoma, 
 
 ## Predicting the Immunescore level and presence of cells
 
+To predict the level of Immunescore and presence of cells, we used a model consisting of two parts: a convolutional neural network (CNN) feature extractor followed by a non-linear classifier. We based the feature extractor backbone in the InceptionV3 architecture. 
+
+To train the model, first you have to arrange a folder structure of the dichotomised dataset such as:
+
+
+  <pre><code>
+  ├── train                  
+  │   ├── high level class          
+  │   └── low level class           
+  └── test                  
+      ├── high level class          
+      └── low level class    
+  </pre></code>
+  
+After, pointing to the path of your foldefr structure in the train.py file, to start the training you have only to run:
+
+  <pre><code> python train.py </pre></code>
+  
+It will generate two graps showing the learning curves and accuracy performnace in the same folder than the train.py file is included. In addition, it will save the model for each epochs in a folder call weigths. 
+
 
 <a name="explore"/>
+
 ## Exploring our database
 
 You can explore our database following the next steps:
