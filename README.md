@@ -48,7 +48,7 @@ Tumour immunity is key for the prognosis and treatment of colon adenocarcinoma, 
 ## Exploring our database
 
 You can explore our database following the next steps:
--  download a copy of our database [here](https://secrierlab.github.io/projects/). It is a zip file including all the necessary files.
+-  download a copy of our database [here](https://drive.google.com/file/d/1reNyA2uYW23SYnTMFCCgIBHov5voY6i7/view?usp=sharing/). It is a zip file including all the necessary files.
 -  You will need a version of the Neo4j software running in your computer. We have used the open source version [Neo4j Community Edition](https://neo4j.com/download-center/#community).
 - Ensure the system service is not running on your machine. In Linux:
   <pre><code> sudo systemctl stop neo4j.service </pre></code>
