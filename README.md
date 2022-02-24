@@ -76,7 +76,7 @@ You can explore our database following the next steps:
 - Unzip the same graph.db.zip into the appropriate database folder. By default in Linux <neo4j-home>/data/database
 - Restart the Neo4j system service
   <pre><code> sudo systemctl start neo4j.service 
-  sudo systemctl enable neo4j.service
+    sudo systemctl enable neo4j.service
   </pre></code>
 - Ensure Neo4j us running:
   <pre><code> sudo systemctl enable neo4j.service </pre></code>
