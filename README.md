@@ -1,4 +1,4 @@
-# Characteraising the immunological landscape and spatial architecture of colon cancer tissue
+# Characterising the immunological landscape and spatial architecture of colon cancer tissue
 
 This is a Python implementation of the paper:
 
